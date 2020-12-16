@@ -14,6 +14,39 @@
 </head>
 
 <body>
+    <style>
+        .preloader {
+            position: fixed;
+            z-index: 99;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: white;
+        }
+
+        .preloader.hidden {
+            animation: fadeOut 1s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes fadeOut {
+            100% {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+    </style>
+    <script>
+        window.addEventListener('load', () => {
+            const preloader = document.getElementsByClassName('preloader')[0];
+            preloader.classList.add('hidden');
+        })
+    </script>
+    <div class="preloader">
+        <img src="./public/img/giphy.gif" alt="">
+    </div>
     <div class="outer-wrapper">
         <div class="container">
             <div class="row">
@@ -53,14 +86,14 @@
                     <div class="person">
                         <div class="person__avatar s-back-switch"></div>
                         <div class="person__info">
-                            <h2 class="person__name">Erfan Po</h2>
-                            <div class="person__position"><span>Web Developer</span></div>
+                            <h2 class="person__name">عرفان پورسینا</h2>
+                            <div class="person__position"><span>ادیتور و برنامه نویس</span></div>
                             <div class="person__socials">
                                 <ul class="person__socials-list">
-                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="https://instagram.com/erfn_po"><i class="fab fa-instagram"></i></a></li>
                                     <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
                                     <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-telegram"></i></a></li>
+                                    <li><a href="https://telegram.me/erfAnPoorsina"><i class="fab fa-telegram"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -73,44 +106,44 @@
                             <div class="tab-content-inner">
                                 <div class="content about">
                                     <div class="title">
-                                        About Me
+                                        درباره من
                                     </div>
                                     <div class="row">
                                         <div class="col-md-6 col-sm-12 border-line-v">
-                                            <div class="text-box">
-                                                <p>
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                    Reprehenderit assumenda nam adipisci
-                                                </p>
+                                            <div class="info-list">
+                                                <ul>
+                                                    <li><strong>سن</strong>17</li>
+                                                    <li><strong>محل سکونت</strong>IRI</li>
+                                                    <li><strong>فریلنسر</strong>هستم</li>
+                                                    <li><strong>زبان برنامه نویسی</strong>Nodejs</li>
+                                                </ul>
                                             </div>
                                         </div>
                                         <div class="col-md-6 col-sm-12 border-line-v">
-                                            <div class="info-list">
-                                                <ul>
-                                                    <li><strong>Age</strong>17</li>
-                                                    <li><strong>Residence</strong>IRI</li>
-                                                    <li><strong>Freelance</strong>Available</li>
-                                                    <li><strong>Address</strong>Esfahan, Iran</li>
-                                                </ul>
+                                            <div class="text-box">
+                                                <p>
+                                                    عرفان پورسینا هستم و خیلی علاقه مند به حوزه 
+                                                     برنامه نویسی و ادیت کردن فیلم و عکس هستم و در شهر اصفهان زندگی میکنم
+                                                </p>
                                             </div>
                                         </div>
                                         <div class="clear"></div>
                                     </div>
                                 </div>
                                 <div class="content services">
-                                    <div class="title">My Services</div>
+                                    <div class="title">مهارت ها</div>
                                     <div class="row service-items border-line-v">
                                         <div class="col-md-6 col-sm-12">
                                             <div class="service-item border-line-h">
                                                 <div class="icon">
                                                     <i class="fa fa-code"></i>
                                                 </div>
-                                                <div class="name"><span>Web Development</span></div>
+                                                <div class="name"><span>طراحی سایت</span></div>
                                                 <div class="desc">
                                                     <p>
-                                                        Lorem ipsum dolor, sit amet consectetur adipisicing
-                                                        elit.
-                                                        Quo rem fugit aut dolorem amet aspernatur
+                                                        یک سایت خوب و رو به رشد دارای چند خصوصیت بارزه.
+                                                        اولین موردش یک ظاهر خوب و حرفه ای و بعد از اون خدمات پشتیبانیش
+                                                        و در نهایت نبود مشکل در اجرای کارهای کاربران سایت
                                                     </p>
                                                 </div>
                                             </div>
@@ -118,14 +151,14 @@
                                         <div class="col-md-6 col-sm-12">
                                             <div class="service-item border-line-h">
                                                 <div class="icon">
-                                                    <i class="fa fa-music"></i>
+                                                    <i class="fab fa-instagram"></i>
                                                 </div>
-                                                <div class="name"><span>Music Listener</span></div>
+                                                <div class="name"><span>ادمین اینستاگرام</span></div>
                                                 <div class="desc">
                                                     <p>
-                                                        Lorem ipsum dolor, sit amet consectetur adipisicing
-                                                        elit.
-                                                        Quo rem fugit aut dolorem amet aspernatur
+                                                        با تجربه 1 سال و نیم در حوزه کسب و کارهای دیجیتال و بیشتر از همه 
+                                                        اینستاگرام. کسب و کارهای اینترنتی دارای محدودیت زمانی و مکانی نیستند و 
+                                                        هر موقع میتوانند برای شما درآمدزایی کنند
                                                     </p>
                                                 </div>
                                             </div>
@@ -133,14 +166,13 @@
                                         <div class="col-md-6 col-sm-12">
                                             <div class="service-item border-line-h">
                                                 <div class="icon">
-                                                    <i class="fa fa-shopping-cart"></i>
+                                                    <i class="fa fa-hands-helping"></i>
                                                 </div>
-                                                <div class="name"><span>Advertising</span></div>
+                                                <div class="name"><span>مشاوره تولید محتوا</span></div>
                                                 <div class="desc">
                                                     <p>
-                                                        Lorem ipsum dolor, sit amet consectetur adipisicing
-                                                        elit.
-                                                        Quo rem fugit aut dolorem amet aspernatur
+                                                        مشاوره در زمینه های مختلف میتونه شما رو توی هر کاری خیلی خیلی جلو بندازه و 
+                                                        روند رشد شما رو تسریع ببخشه.
                                                     </p>
                                                 </div>
                                             </div>
@@ -148,20 +180,21 @@
                                         <div class="col-md-6 col-sm-12">
                                             <div class="service-item border-line-h">
                                                 <div class="icon">
-                                                    <i class="fa fa-gamepad"></i>
+                                                    <i class="fa fa-video"></i>
                                                 </div>
-                                                <div class="name"><span>Game Development</span></div>
+                                                <div class="name"><span>ادیت ویدیو</span></div>
                                                 <div class="desc">
                                                     <p>
-                                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                                        Quo rem fugit aut dolorem amet aspernatur
+                                                        ادیت ویدیو با نرم افزار قدرتمند پریمیر میتونه تجربه مشتریان شما رو 
+                                                        از کیفیت و نحوه ارائه محتوا به اونها بسیار بالا ببره و به شما کمک کنه 
+                                                        تا مخاطبان بیشتری رو در هر حوزه ای که هستید. جذب کنید
                                                     </p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="content quote">
-                                        <div class="title d-flex justify-content-center"><span>Quote</span></div>
+                                        <div class="title d-flex justify-content-center"><span>رضایت مشتریان</span></div>
                                         <div class="row">
                                             <div class="col col-d-12 col-t 12 col-m-12 border-line-v">
                                                 <div class="revs-item">
@@ -176,8 +209,8 @@
                                                             <img src="./public/img/work-1.jpg" alt="">
                                                         </div>
                                                         <div class="info">
-                                                            <div class="name">Erfan Poorsina</div>
-                                                            <div class="company">Web Designer</div>
+                                                            <div class="name">عرفان پورسینا</div>
+                                                            <div class="company">طراح سایت</div>
                                                         </div>
                                                         <div class="clear"></div>
                                                     </div>
@@ -196,7 +229,7 @@
                             <div class="tab-content-inner">
                                 <div class="content contacts">
                                     <div class="title">
-                                        Get in Touch
+                                        ارتباط با من
                                     </div>
                                     <div class="row">
                                         <div class="col col-d-12 col-t-12 col-m-12 border-line-v">
@@ -209,11 +242,10 @@
                                             </div>
                                             <div class="info-list">
                                                 <ul>
-                                                    <li><strong>Address</strong>Kaveh, negarestan, bahar,
-                                                        boulivard</li>
-                                                    <li><strong>Email</strong>erfanpoorsina@gmail.com</li>
-                                                    <li><strong>Phone</strong>09140383166</li>
-                                                    <li><strong>Freelance</strong>Available</li>
+                                                    <li><strong>محل سکونت</strong>اصفهان، خیابان کاوه، خیابان نگارستان</li>
+                                                    <li><strong>ایمیل</strong>erfanpoorsina@gmail.com</li>
+                                                    <li><strong>تلفن</strong>09140383166</li>
+                                                    <li><strong>دورکاری</strong>انجام میدهم</li>
                                                 </ul>
                                             </div>
                                             <div class="clear"></div>
@@ -221,7 +253,7 @@
                                     </div>
                                     <div class="content contacts">
                                         <div class="title">
-                                            Contact Form
+                                            فرم ارسال نظرات
                                         </div>
                                         <div class="row">
                                             <div class="col col-d-12scol-m-12 border-line-v">
@@ -230,25 +262,25 @@
                                                         <div class="row">
                                                             <div class="col-md-6 col-sm-12">
                                                                 <div class="form-group">
-                                                                    <input type="text" name="name" class="form-control"
-                                                                        placeholder="Full Name">
+                                                                    <input style="text-align: right;font-family: Vazir;" type="text" name="name" class="form-control"
+                                                                        placeholder="نام کامل">
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-6 col-sm-12">
                                                                 <div class="form-group">
-                                                                    <input type="email" name="name" class="form-control"
-                                                                        placeholder="Email Address">
+                                                                    <input style="text-align: right;font-family: Vazir;" type="email" name="name" class="form-control"
+                                                                        placeholder="آدرس ایمیل">
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-12 col-sm-12">
                                                                 <div class="form-group">
-                                                                    <textarea name="message" class="form-control"
-                                                                        placeholder="Your Message"></textarea>
+                                                                    <textarea style="text-align: right;font-family: Vazir;" name="message" class="form-control"
+                                                                        placeholder="پیغام شما"></textarea>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="align-left">
-                                                            <a href="#" class="button-submit">Send Message</a>
+                                                            <a href="#" class="button-submit">ارسال</a>
                                                         </div>
                                                     </form>
                                                 </div>
@@ -265,7 +297,7 @@
                             <div class="tab-content-inner">
                                 <div class="content work-wrap">
                                     <div class="title">
-                                        My Portfolio
+                                        نمونه کارها
                                     </div>
                                     <div class="row service-items border-line-v">
                                         <div class="masonry">
@@ -276,9 +308,12 @@
                                                     </div>
                                                     <div class="work-overlay d-flex align-items-center h-100">
                                                         <div class="text-center work-content">
-                                                            <h2>Social Media</h2>
-                                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                                Adipisci possimus nostrum.</p>
+                                                            <h2>هشدار دهنده سهام</h2>
+                                                            <p>
+                                                                با این برنامه شما میتوانید از قیمت لحظه ای سهام خریداری شده خودتون 
+                                                                با خبر بشید و هر موقع که حد سود و یا حد ضررتون زده شد. اقدام به خرید یا فروش
+                                                                اون کنید
+                                                            </p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -290,9 +325,11 @@
                                                     </div>
                                                     <div class="work-overlay d-flex align-items-center h-100">
                                                         <div class="text-center work-content">
-                                                            <h2>Social Media</h2>
-                                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                                Adipisci possimus nostrum.</p>
+                                                            <h2>فروشگاه ارمغان</h2>
+                                                            <p>
+                                                                سایت فروشگاهی ساخته شده به دستور تیم محتوایی فروشگاه صنایع دستی 
+                                                                ارمغان اصفهان
+                                                            </p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -309,21 +346,22 @@
                             <div class="tab-content-inner">
                                 <div class="content blog">
                                     <div class="title">
-                                        <span>Blog</span>
+                                        <span>مقالات</span>
                                     </div>
                                     <div class="row border-line-v">
                                         <div class="col-md col-sm-12">
                                             <div class="box-item">
                                                 <div class="image">
-                                                    <a href="#"><img src="./public/img/blog-1.png" class="img-fluid" alt=""></a>
+                                                    <a href="#"><img src="./public/img/blog-1.jpg" class="img-fluid" alt=""></a>
                                                 </div>
                                                 <div class="desc">
-                                                    <a href="#" class="date"><span> April 28,2020</span></a>
-                                                    <a href="#" class="name">By Split About do of Allow</a>
+                                                    <a href="#" class="date"><span>برنامه نویسی چه کمکی به شما میکند ؟</span></a>
+                                                    <br>
+                                                    <a href="#" class="name">1399/09/02</a>
                                                     <div class="text">
-                                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum
-                                                        nemo voluptates ratione rerum, laboriosam quibusdam aliquam
-                                                        excepturi ex sint distinctio
+                                                        در این مقابه شما میتوانید به جواب این سوال برسید 
+                                                        که  برنامه نویسی در دنیای امروز میتواند چقدر به سرعت و بازدهی کارهای شما 
+                                                        بهبود ببخشد
                                                     </div>
                                                 </div>
                                             </div>
@@ -331,16 +369,15 @@
                                         <div class="col-md col-sm-12">
                                             <div class="box-item">
                                                 <div class="image">
-                                                    <a href="#"><img src="./public/img/blog-2.jpg" class="img-fluid"
-                                                            alt=""></a>
+                                                    <a href="#"><img src="./public/img/blog-2.png" class="img-fluid"alt=""></a>
                                                 </div>
                                                 <div class="desc">
-                                                    <a href="#"><span class="date"> April 28,2020</span></a>
-                                                    <a href="#" class="name">By Split About do of Allow</a>
+                                                    <a href="#"><span class="date">چگونه سایت خود را داشته باشم ؟</span></a>
+                                                    <br>
+                                                    <a href="#" class="name">1399/07/28</a>
                                                     <div class="text">
-                                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum
-                                                        nemo voluptates ratione rerum, laboriosam quibusdam aliquam
-                                                        excepturi ex sint distinctio
+                                                        در این مقاله به توضیح این مطلب پرداخته ام که افرادی که میخواهند سایت
+                                                        حرفه ای مخصوص به خودشون رو داشته باشند. باید چه مراحلی رو طی بکنند.
                                                     </div>
                                                 </div>
                                             </div>
